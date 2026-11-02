@@ -1,0 +1,17 @@
+.room-glow {
+  z-index: 0;
+  background:
+    radial-gradient(ellipse at 12% 4%, rgba(196, 163, 107, .075), transparent 32rem),
+    radial-gradient(ellipse at 91% 47%, rgba(117, 103, 75, .055), transparent 28rem);
+}
+.evidence-board::after {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border: 1px solid rgba(238, 232, 217, .055);
+  border-radius: 1.45rem;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
